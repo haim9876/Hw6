@@ -1,6 +1,6 @@
 <template>
  <div>
-    <h1>
+    <h1 id = "title">
       Click On The Swap Button To Switch The Images
     </h1>
     <div><button id="button1" @click="swapFunc">Swap</button></div>
@@ -104,15 +104,17 @@ export default {
 </script>
 <style scoped>
   #button1 {
-    background-color: blue; /* Green */
+    background-color: blue;
     border: none;
     color: white;
     padding: 30px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 32px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 45%;
+    margin-top: 40px;
   }
   #button1:hover {
     background-color: #5cAFff;
@@ -122,5 +124,12 @@ export default {
     border: 1px solid #ffffff;
     float: left;
     margin-left: 50px;
+    margin-top: 80px;
+  }
+  #title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: brown;
+    margin-top: 60px;
   }
 </style>
